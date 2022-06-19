@@ -36,14 +36,11 @@ function parseXmlText(text) {
 
 	subagentsArray = subagentsArray.reduce((unique, o) => {
 		if(!unique.some(obj => 
-			obj.email === o.email && 
-			obj.phone === o.phone &&
-			obj.firstName === o.firstName &&
-			obj.lastName === o.lastName
+			obj.email === o.email
 			)
-			) {
+		) {
 			unique.push(o);
-	}
+		}
 		return unique;
 	},[]);
 
