@@ -1,0 +1,31 @@
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="subagent.js"></script>
+
+    <link rel="stylesheet" href="subagent.css">
+
+    <div class="input-group custom-file-button">
+    	<label class="input-group-text" for="inputGroupFile">Выберите xml файл для загрузки</label>
+    	<input type="file" class="form-control" id="inputGroupFile" accept=".xml" onchange="onXmlUploaded()"> 
+    </div>
+
+    <table class="table table-striped">
+    	<thead>
+    		<tr>
+    			<th scope="col">Email</th>
+    			<th scope="col">Phone</th>
+    			<th scope="col">FirstName</th>
+    			<th scope="col">LastName</th>
+    		</tr>
+    	</thead>
+    	<tbody id="tableBody">
+    	</tbody>
+    </table>
+
+    <div class='container mb-5' id="downloadContainer">
+    	<button type="button" class="btn btn-primary" id="downloadCSV" style="visibility: hidden;">Скачать CSV</button>
+    </div>
