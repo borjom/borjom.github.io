@@ -8,24 +8,28 @@
 
     <link rel="stylesheet" href="pages/subagent/subagent.css">
 
-    <div class="input-group custom-file-button">
-    	<label class="input-group-text" for="inputGroupFile">Выберите xml файл для загрузки</label>
-    	<input type="file" class="form-control" id="inputGroupFile" accept=".xml" onchange="onXmlUploaded()"> 
+    <div class='container-fluid'>
+        <div class="input-group custom-file-button">
+            <label class="input-group-text" for="inputGroupFile">Выберите xml файл для загрузки</label>
+            <input type="file" class="form-control" id="inputGroupFile" accept=".xml" onchange="onXmlUploaded()"> 
+        </div>
     </div>
 
-    <table class="table table-striped">
-    	<thead>
-    		<tr>
-    			<th scope="col">Email</th>
-    			<th scope="col">Phone</th>
-    			<th scope="col">FirstName</th>
-    			<th scope="col">LastName</th>
-    		</tr>
-    	</thead>
-    	<tbody id="tableBody">
-    	</tbody>
-    </table>
+    <div class='container-fluid'>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
 
-    <div class='container mb-5' id="downloadContainer">
+    <div class='container-fluid' id="downloadContainer">
     	<button type="button" class="btn btn-primary" id="downloadCSV" style="visibility: hidden;">Скачать CSV</button>
     </div>
