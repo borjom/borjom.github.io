@@ -13,7 +13,7 @@ function onXmlUploaded() {
 
 function parseXmlText(text) {
 	const parser = new DOMParser();
-	const xmlDoc = parser.parseFromString(text.toLowerCase(),"text/xml");
+	const xmlDoc = parser.parseFromString(text.toLowerCase().replaceAll("cdata","CDATA"),"text/xml");
 	const subagents = xmlDoc.getElementsByTagName("subagent");
 
 	const tableBody = document.getElementById("tableBody");
